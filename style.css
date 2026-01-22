@@ -19,3 +19,15 @@ alt='gakpo.jfif'width='100'>
     alt='gakpo.jfif'width='100'>
 alt='casemiro.jfif'width='100'>
 alt='Maguire goal'width='100'>
+ /** player rating list: 
+Maguire (9)
+Mbumbo (8)
+lammens (8)
+**/
+
+CREATE TABLE player ratings(id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER );
+
+INSERT INTO groceries VALUES (1, "maguire", 9);
+INSERT INTO groceries VALUES (2, "mbumbo", 8);
+INSERT INTO groceries VALUES (3, "Lammens", 8);
+SELECT * player rating;
