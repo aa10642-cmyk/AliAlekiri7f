@@ -1,6 +1,6 @@
 /* Change the background of the entire visible page */
 body {
-    background-color: color:rgb(173, 16, 20)
+    background-color:rgb(173, 16, 20)
 }
 
 /* Style for all paragraphs */
@@ -15,15 +15,4 @@ h1 {
     text-align: center; /* Puts the heading in the middle */
     border: 3px solid black; /* Adds an orange border around the heading */
     padding: 10px; /* Adds space inside the border */
-/** player rating list: 
-Maguire (9)
-Mbumbo (8)
-lammens (8)
-**/
 
-CREATE TABLE player ratings(id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER );
-
-INSERT INTO groceries VALUES (1, "maguire", 9);
-INSERT INTO groceries VALUES (2, "mbumbo", 8);
-INSERT INTO groceries VALUES (3, "Lammens", 8);
-SELECT * player rating;
