@@ -1,4 +1,4 @@
-/* General page styling */
+/* ===== General page styling ===== */
 body {
     background-color: rgb(100, 0, 0); /* darker red */
     color: lightgrey; /* all text light grey */
@@ -21,11 +21,11 @@ h1 {
 /* Paragraphs and lists */
 p, li {
     font-size: 25px;
-    color: lightgrey; /* ensure paragraphs and list items are light grey */
+    color: lightgrey; 
     line-height: 1.6;
 }
 
-/* Image grid */
+/* ===== Image grid ===== */
 .image-grid {
     display: flex;
     flex-wrap: wrap;
@@ -46,59 +46,16 @@ p, li {
     box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 }
 
-/* Player ratings grid */
+/* ===== Player ratings grid ===== */
 .ratings-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
-    max-width: 900px;
+    max-width: 1000px;
+    margin: 20px auto;
 }
 
-.ratings-grid div {
-    background-color: rgba(0,0,0,0.1); /* subtle background for player cards */
-    padding: 10px;
-    border-radius: 5px;
-    color: lightgrey; /* player text light grey */
-    text-align: center;
-    font-size: 20px;
-}
-
-/* Links */
-a {
-    color: lightgrey;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Tables, if any */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    color: lightgrey;
-}
-
-th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: center;
-    color: lightgrey;
-}
-/* Animation keyframes */
-@keyframes flyIn {
-  0% {
-    opacity: 0;
-    transform: translateY(50px); /* start below */
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0); /* end in place */
-  }
-}
-
-/* Player card styling with animation */
+/* Player cards with animation */
 .player-card {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -110,8 +67,20 @@ th, td {
     box-shadow: 0 3px 8px rgba(0,0,0,0.3);
     
     /* Animation */
-    opacity: 0; /* start invisible */
+    opacity: 0; 
     animation: flyIn 0.6s forwards;
+}
+
+/* Fly-in animation keyframes */
+@keyframes flyIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Stagger animation for each card */
@@ -124,3 +93,27 @@ th, td {
 .ratings-grid .player-card:nth-child(7) { animation-delay: 0.7s; }
 .ratings-grid .player-card:nth-child(8) { animation-delay: 0.8s; }
 /* Add more nth-child rules if you have more players */
+
+/* ===== Links ===== */
+a {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Tables ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: lightgrey;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    color: lightgrey;
+}
