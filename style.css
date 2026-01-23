@@ -19,9 +19,15 @@ h1 {
 }
 
 /* Image grid styling */
-.image-grid img {
-  width: 45%;
-  height: 250px;
-  object-fit: cover; /* makes all images equal size */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;          /* space between images */
+    justify-content: center;
 }
 
+.image-grid img {
+    width: 45%;          /* 2 per row */
+    height: 250px;       /* same height for all images */
+    object-fit: cover;   /* crops without stretching */
+}
