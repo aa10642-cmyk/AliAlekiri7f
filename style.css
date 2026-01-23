@@ -19,4 +19,8 @@ alt='gakpo.jfif'width='100'>
     alt='gakpo.jfif'width='100'>
 alt='casemiro.jfif'width='100'>
 alt='Maguire goal'width='100'>
-
+p, li {
+  color: darkred;
+  font-size: 25px;
+  font-family: 'Times New Roman', serif;
+}
