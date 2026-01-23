@@ -4,28 +4,24 @@ body {
 }
 
 /* Style for all paragraphs */
-p {
-    color: dark red;
-    font-size: 25px;
-    font-family: 'Times New Roman', serif;
-}
-
-/* Style for the main heading */
-h1 {
-   h1 {
-  text-align: center; /* center the heading */
-  border: 3px solid black; /* keeps the border */
-  padding: 10px; /* keeps spacing */
-  font-size: 50px; /* make it bigger */
-}
-
-  width: 45%;
-  height: 250px;        /* same height for all */
-  object-fit: cover;   /* crops instead of stretching */
-}
-
 p, li {
   color: darkred;
   font-size: 25px;
   font-family: 'Times New Roman', serif;
 }
+
+/* Style for the main heading */
+h1 {
+  text-align: center; /* center the heading */
+  border: 3px solid black; /* adds a border */
+  padding: 10px;
+  font-size: 50px; /* bigger title */
+}
+
+/* Image grid styling */
+.image-grid img {
+  width: 45%;
+  height: 250px;
+  object-fit: cover; /* makes all images equal size */
+}
+
