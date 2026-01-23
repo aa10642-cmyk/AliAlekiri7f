@@ -8,7 +8,7 @@ body {
 /* Style for all paragraphs and list items */
 p, li {
     font-size: 25px;
-    color: black;
+    color: light grey;
 }
 
 /* Style for the main heading */
