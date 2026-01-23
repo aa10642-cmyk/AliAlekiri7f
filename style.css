@@ -1,33 +1,102 @@
 /* Change the background of the entire visible page */
 body {
-  background-color: rgb(200, 20, 100);
+    background-color: rgb(150, 0, 0); /* darker red */
+    color: black; /* default text color for all */
+    font-family: 'Times New Roman', serif;
 }
 
-/* Style for all paragraphs */
+/* Style for all paragraphs and list items */
 p, li {
-  color: darkred;
-  font-size: 25px;
-  font-family: 'Times New Roman', serif;
+    font-size: 25px;
+    color: black;
 }
 
 /* Style for the main heading */
 h1 {
-  text-align: center; /* center the heading */
-  border: 3px solid black; /* adds a border */
-  padding: 10px;
-  font-size: 50px; /* bigger title */
+    text-align: center; /* center the heading */
+    border: 3px solid black; /* adds a border */
+    padding: 10px;
+    font-size: 50px; /* bigger title */
+    color: black;
 }
 
 /* Image grid styling */
 .image-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;          /* space between images */
+    gap: 20px; /* space between images */
     justify-content: center;
 }
 
 .image-grid img {
-    width: 45%;          /* 2 per row */
-    height: 250px;       /* same height for all images */
-    object-fit: cover;   /* crops without stretching */
+    width: 45%; /* 2 per row */
+    height: 250px; /* same height for all images */
+    object-fit: cover; /* crops without stretching */
+}
+
+/* Player ratings grid styling */
+.ratings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.player-card {
+    background-color: #f8f8f8; /* card background */
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.player-card h3 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.player-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: black;
+}
+
+/* Make table bigger and wider */
+table {
+    width: 70%; /* make table wider */
+    margin: 20px auto; /* center table */
+    border-collapse: collapse; /* remove double borders */
+    font-size: 20px; /* bigger text */
+    color: black;
+}
+
+table th, table td {
+    padding: 12px 20px; /* more space in cells */
+    border: 2px solid black; /* thicker borders */
+    text-align: center; /* center text */
+    color: black;
+}
+
+table th {
+    background-color: black; /* header black for contrast */
+    color: white; /* white text in header */
+    font-size: 22px; /* slightly bigger for headers */
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* alternate row color */
+}
+
+/* Optional: responsive table on mobile */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%; /* full width on small screens */
+        font-size: 18px; /* slightly smaller text for mobile */
+    }
+
+    .image-grid img {
+        width: 100%; /* 1 per row on mobile */
+    }
 }
