@@ -15,10 +15,12 @@ h1 {
     text-align: center; /* Puts the heading in the middle */
     border: 3px solid black; /* Adds an orange border around the heading */
     padding: 10px; /* Adds space inside the border */
-alt='gakpo.jfif'width='100'>
-    alt='gakpo.jfif'width='100'>
-alt='casemiro.jfif'width='100'>
-alt='Maguire goal'width='100'>
+.image-grid img {
+  width: 45%;
+  height: 250px;        /* same height for all */
+  object-fit: cover;   /* crops instead of stretching */
+}
+
 p, li {
   color: darkred;
   font-size: 25px;
