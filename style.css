@@ -97,6 +97,79 @@ table {
     border-collapse: collapse;
     color: lightgrey;
 }
+/* Container for the entire ratings section */
+.player-ratings {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.player-ratings h2 {
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* The Grid Layout */
+.ratings-grid {
+  display: grid;
+  /* Automatically adjusts column count based on screen width */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Player Card */
+.player-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #3498db; /* Team accent color */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.player-card h3 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+  font-size: 1.4rem;
+}
+
+/* Rating highlight styling */
+.player-card p:first-of-type {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #e67e22; /* Rating color */
+  margin-bottom: 12px;
+  display: inline-block;
+  background: #fff3e0;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+/* Description text */
+.player-card p:last-of-type {
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  .ratings-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 th, td {
     border: 1px solid black;
