@@ -38,13 +38,8 @@ p, li {
     width: 45%;
     height: 250px;
     object-fit: cover;
-    transition: 0.3s;
 }
 
-.image-grid img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-}
 
 /* ===== Player ratings grid ===== */
 .ratings-grid {
@@ -55,7 +50,7 @@ p, li {
     margin: 20px auto;
 }
 
-/* Player cards with animation */
+/* Player cards  */
 .player-card {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -71,16 +66,6 @@ p, li {
     animation: flyIn 0.6s forwards;
 }
 
-/* Fly-in animation keyframes */
-@keyframes flyIn {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* Stagger animation for each card */
@@ -100,9 +85,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 /* ===== Tables ===== */
 table {
